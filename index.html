@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/1200px-React.svg.png" type="image/png" />
     <title>BOOTSTRAP WEBSITE</title>
 
     <!--CSS BOOTSTRAP-->
@@ -13,14 +14,20 @@
       crossorigin="anonymous"
     />
 
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/20a0fcaf79.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="/">Bootstrap WEBSITE</a>
+        <a class="navbar-brand" href="index.html">Bootstrap WEBSITE</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,13 +42,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -50,11 +57,11 @@
 
     <!--HEADER-->
     <header class="main-header">
-      <div class="background-overlay text-white py-5">
+      <div class="background-overlay text-white">
         <div class="container">
-          <div class="row">
+          <div class="row hero">
             <div
-              class="col-md-6 text-center justify-content-center align-self-center"
+              class="col-md-6 text-center justify-content-center align-self-center hero__description"
             >
               <h1>Este es un titulo o una frase relacionada al product</h1>
               <p>
@@ -67,11 +74,13 @@
               >
             </div>
 
-            <div class="col-md-6 justify-content-center align-self-center">
+            <div
+              class="col-md-6 justify-content-center align-self-center hero__content-img"
+            >
               <img
                 src="img/product.jpg"
                 alt="Imagen del producto"
-                class="img-fluid"
+                class="img-fluid d-sm-block"
               />
             </div>
           </div>
@@ -79,6 +88,403 @@
       </div>
     </header>
 
+    <!-- NEWSLETTER -->
+    <section class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="col-md-4">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary btn-lg btn-block">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>Feature one</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+              <div class="card-body">
+                <h3>Feature two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>Feature three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+              <div class="card-body">
+                <h3>Feature four</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="m-5">
+            <h3>Why this Product?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis temporibus iste hic eum dolores vel inventore.
+              Quibusdam, tempore exercitationem! Delectus rerum vitae
+              exercitationem possimus alias dicta asperiores voluptatibus
+              eveniet id.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="container text-center p-5">
+      <div class="row">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-center"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Question #1
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-center collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Question #2
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-center collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Question #3
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="team text-center">
+      <div class="container p-5">
+        <h1 class="text-white">Team</h1>
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          veritatis!
+        </p>
+        <div class="row mt-5">
+          <!-- MEMBER -->
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/team1.jpg" class="img-fluid person-img alt="" />
+                <h3>John Carter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, voluptatum!
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.facebook.com"
+                      ><span class="fab fa-facebook"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.twitter.com"
+                      ><span class="fab fa-twitter"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.linkedin.com"
+                      ><span class="fab fa-linkedin-in"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/team2.jpg" class="img-fluid person-img" alt="" />
+                <h3>John Carter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, voluptatum!
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.facebook.com"
+                      ><span class="fab fa-facebook"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.twitter.com"
+                      ><span class="fab fa-twitter"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.linkedin.com"
+                      ><span class="fab fa-linkedin-in"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/team3.jpg" class="img-fluid person-img" alt="" />
+                <h3>John Carter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, voluptatum!
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.facebook.com"
+                      ><span class="fab fa-facebook"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.twitter.com"
+                      ><span class="fab fa-twitter"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.linkedin.com"
+                      ><span class="fab fa-linkedin-in"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/team4.jpg" class="img-fluid person-img" alt="" />
+                <h3>John Carter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, voluptatum!
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.facebook.com"
+                      ><span class="fab fa-facebook"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.twitter.com"
+                      ><span class="fab fa-twitter"></span
+                    ></a>
+                  </div>
+
+                  <div class="p-2">
+                    <a target="_blank" href="http://www.linkedin.com"
+                      ><span class="fab fa-linkedin-in"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3>Contact</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <form action="">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="fas fa-user input-group-text"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="fas fa-envelope input-group-text"></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="fas fa-pencil-alt input-group-text"></span>
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write Your Message"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary btn-lg btn-block">
+                Send Your Message
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-3 align-self-center text-center">
+            <img src="img/bootstrap-stack.png" class="img-logo" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container p-3 text-white text-center">
+        <p>Copyright &copy; 2018 | Lexstudio</p>
+        <p>
+          Desarrollado por:
+          <a target="_blank" href="https://twitter.com/lexanderDev"
+            >@lexanderDev</a
+          >
+        </p>
+      </div>
+    </footer>
     <!--jS BOOTSTRAP-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
